@@ -1,0 +1,92 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom, #1a0033, #0d001a); /* púrpura oscuro */
+color: white;
+}
+
+h2 {
+padding: 40px;
+margin: 0;
+background-color: #2d0055;
+text-align: center;
+border-bottom: 2px solid #a259ff;
+font-size: 32px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+#listaCanciones {
+padding: 10px;
+}
+
+.cancion {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.08);
+border-radius: 20px;
+padding: 24px 28px;
+margin: 12px;
+transition: background-color 0.3s, transform 0.2s;
+flex-wrap: wrap;
+border: 1px solid #9b59b6;
+box-shadow: 0 0 12px rgba(162, 89, 255, 0.3);
+}
+
+.cancion:hover {
+background-color: rgba(255, 255, 255, 0.12);
+transform: scale(1.02);
+}
+
+.cancion span {
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.cancion .titulo {
+font-weight: bold;
+font-size: 36px;
+color: #e0c3fc; /* lila claro */
+text-shadow: 0 0 6px rgba(162, 89, 255, 0.6);
+}
+
+.cancion .subtitulo {
+font-size: 15px;
+color: #d1b3ff;
+}
+
+.cancion button {
+background-color: transparent;
+color: #ff9dfc; /* rosado claro */
+border: none;
+font-size: 35px;
+cursor: pointer;
+padding: 6px;
+transition: color 0.3s;
+}
+
+.cancion button:hover {
+color: #ffffff;
+}
+
+#btnSiguienteGlobal {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #a259ff;
+border: none;
+color: white;
+font-size: 22px;
+padding: 16px 22px;
+border-radius: 50%;
+box-shadow: 0 0 20px rgba(162, 89, 255, 0.6);
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+#btnSiguienteGlobal:hover {
+background-color: #c084fc;
+transform: scale(1.1);
+}
